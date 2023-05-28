@@ -10,11 +10,19 @@ const products = [
     "Fantech gaming RGB keyboard"
 ];
 
-const searchingInput = "gaming";
+const searchingInput = "laptop";
 const output = [];
 
-for (const product of products) {
+/* for (const product of products) {
     if (product.toLowerCase().indexOf(searchingInput.toLowerCase()) != -1) {
+        output.push(product);
+    }
+}
+
+console.log(output); */
+
+for (const product of products) {
+    if (product.toLowerCase().includes(searchingInput.toLowerCase())) {
         output.push(product);
     }
 }
